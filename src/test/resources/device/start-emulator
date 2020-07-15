@@ -1,0 +1,10 @@
+#!/bin/sh
+
+clear
+cd $1
+
+echo "Kill Android Emulator if it is running already..."
+kill -9 $(lsof -i:5556)
+
+echo "Starting Android Emulator ..."
+./emulator -avd $2 -port 5556

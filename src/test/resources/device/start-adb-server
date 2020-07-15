@@ -1,0 +1,10 @@
+#!/bin/sh
+
+clear
+cd $1
+
+echo "Kill Android Bridge if it is running already ..."
+kill -9 $(lsof -i:5037)
+
+echo "Starting Android Bridge ..."
+./adb start-server -port 5037

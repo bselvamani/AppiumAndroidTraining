@@ -1,0 +1,12 @@
+# Path
+java_home: /Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home
+android_home: /Users/NIS1547-mbp/Library/Android/sdk
+
+# App
+application: /src/test/resources/app/General-Store.apk
+device_name: Nexus_6P_API_30
+
+# Url
+url: http://automationpractice.com/
+user: bright.selvam@gmail.com
+password: P@ssw0rd12*

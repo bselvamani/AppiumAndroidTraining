@@ -1,0 +1,11 @@
+#!/bin/sh
+
+clear
+
+echo "Stop Appium Server if it is running already ..."
+kill -9 $(lsof -i:4723)
+
+echo "Starting Appium Server ..."
+#cd /usr/local/bin/appium
+appium --address 127.0.0.1 --port 4723 --chromedriver-executable /usr/local/bin/chromedriver
+#--allow-insecure chromedriver_autodownload
